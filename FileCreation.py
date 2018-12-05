@@ -58,11 +58,11 @@ def download_images():
 		except urllib3.exceptions.ProtocolError as e:
 			print(e.code)
 		except requests.exceptions.ConnectionError as e:
-			print("yikes")
+			print("connection request error")
 		except requests.exceptions.InvalidSchema as e:
-			print("ok")
+			print("Invalid Schema")
 		except http.client.RemoteDisconnected as rd:
-			print("hi")
+			print("Remote disconnected error")
 
 #opens the file
 #os.startfile("image.jpg")
